@@ -1,13 +1,23 @@
-import React from "react";
+import About from "./components/About";
+import Hero from "./components/Hero";
+import NavBar from "./components/Navbar";
+import Features from "./components/Features";
+import Story from "./components/Story";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-const App = () => {
+function App() {
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <h1 className="text-5xl text-violet-300 font-bold font-circular-web">
-        welcome to my app
-      </h1>
-    </div>
+    <main className="relative min-h-screen w-screen overflow-x-hidden">
+      <NavBar />
+      <Hero />
+      <About />
+      <Features />
+      <Story />
+      <Contact />
+      <Footer />
+    </main>
   );
-};
+}
 
 export default App;
